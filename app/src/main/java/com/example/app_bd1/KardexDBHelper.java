@@ -8,6 +8,7 @@ public class KardexDBHelper extends SQLiteOpenHelper {
 
     private static final int DB_VERSION = 1;
     private static final String DB_NAME = "kardex.db";
+
     private static final String T_K = "kardex";
     private static final String T_M = "materias";
     private static final String T_P = "periodos";
@@ -80,6 +81,9 @@ public class KardexDBHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + T_K + ";");
         onCreate(db);
     }
+
+
+
 
 
 }
